@@ -15,12 +15,12 @@ pipeline{
                 //sh'npm install -D sonarqube-scanner'
             }
         }
-        stage ('build') {
-            steps{
-                echo "Building"
-                sh 'npm run build'
-                }
-        }
+        //stage ('build') {
+        //    steps{
+        //        echo "Building"
+        //        sh 'npm run build'
+        //        }
+        //}
         stage('Test') {
             steps {
                 sh 'npm test'
